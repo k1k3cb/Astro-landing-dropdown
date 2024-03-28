@@ -1,6 +1,9 @@
-import NavMenu from "./NavMenu";
+import { useState } from 'react';
+import NavMenu from './NavMenu';
+import Sidebar from './Sidebar';
 
 const Header = () => {
+  const [open, setOpen] = useState<boolean>(false);
   return (
     <header className=''>
       <div className='flex py-5 px-3'>
@@ -8,11 +11,10 @@ const Header = () => {
           <img src='images/logo.svg' alt='Logo' />
         </div>
         <div className='flex-grow flex items-center z-20'>
-
-            <NavMenu/>
+          <NavMenu />
         </div>
         <div className='flex items-center'>
-          <a href='#'>
+          <a href='#' onClick={() => setOpen(true)}>
             <img
               src='images/icon-menu.svg'
               alt='Menu Icon'
@@ -29,6 +31,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <Sidebar open={open} setOpen={setOpen} />
     </header>
   );
 };
