@@ -8,7 +8,7 @@ const NavMenu = () => {
         {MENU_ITEMS.map(menuItem => (
           <li key={menuItem.title}>
             <Menu>
-              <Menu.Button>
+              <Menu.Button className={'hover:text-almost-black '}>
                 {menuItem.title}{' '}
                 {menuItem.subItems && (
                   <img

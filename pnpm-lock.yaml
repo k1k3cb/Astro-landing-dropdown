@@ -14,6 +14,9 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.5.10)(tailwindcss@3.4.3)
+  '@fontsource-variable/epilogue':
+    specifier: ^5.0.13
+    version: 5.0.13
   '@headlessui/react':
     specifier: ^1.7.18
     version: 1.7.18(react-dom@18.2.0)(react@18.2.0)
@@ -873,6 +876,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource-variable/epilogue@5.0.13:
+    resolution: {integrity: sha512-pUGRXHGkx3+PS+806vFw4EcBahr/+ck+lVwuSG+mCvzSix9WHAsN2+BXWef8PDGGYSH79i9hh7QKM6rEVinENA==}
+    dev: false
 
   /@headlessui/react@1.7.18(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-4i5DOrzwN4qSgNsL4Si61VMkUcWbcSKueUV7sFhpHzQcSShdlHENE5+QBntMSRvHt8NyoFO2AGG8si9lq+w4zQ==}
